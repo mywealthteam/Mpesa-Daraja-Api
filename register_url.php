@@ -2,9 +2,9 @@
 //INCLUDE ACCESS TOKEN FILE 
 include 'accessToken.php';
 $registerurl = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl';
-$BusinessShortCode = '174379';
-$confirmationUrl = 'https://mydomain.com/confirmation_url.php';
-$validationUrl = 'https://mydomain.com/validation_url.php';
+$BusinessShortCode = '411813';
+$confirmationUrl = 'https://arcadiaharmonyandwellnesscentre.org/confirmation_url.php';
+$validationUrl = 'https://arcadiaharmonyandwellnesscentre.org/validation_url.php';
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $registerurl);
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Authorization:Bearer ' . $access_token));
