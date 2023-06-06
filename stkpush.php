@@ -3,17 +3,17 @@
 include 'accessToken.php';
 date_default_timezone_set('Africa/Nairobi');
 $processrequestUrl = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
-$callbackurl = 'https://kariukijames.com/pesa/callback.php';
+$callbackurl = 'https://arcadiaharmonyandwellnesscentre.org/pesa/callback.php';
 $passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
-$BusinessShortCode = '174379';
+$BusinessShortCode = '411813';
 $Timestamp = date('YmdHis');
 // ENCRIPT  DATA TO GET PASSWORD
 $Password = base64_encode($BusinessShortCode . $passkey . $Timestamp);
-$phone = '254768168060';
+$phone = '254797607926';
 $money = '1';
 $PartyA = $phone;
-$PartyB = '254708374149';
-$AccountReference = 'UMESKIA SOFTWARES';
+$PartyB = '254742894045';
+$AccountReference = 'ARCADIA HARMONY';
 $TransactionDesc = 'stkpush test';
 $Amount = $money;
 $stkpushheader = ['Content-Type:application/json', 'Authorization:Bearer ' . $access_token];
